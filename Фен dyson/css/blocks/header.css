@@ -1,0 +1,50 @@
+.header {
+	background-color: var(--text-color);
+	padding-block: 6px;
+}
+
+/* .header__burger {
+	margin-right: clamp(40px, 2.34rem + 0.65vw, 50px);
+} */
+
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__burger-button {
+	color: var(--main-color);
+	transition: color var(--transition-time);
+}
+
+.header__burger-icon {
+	stroke: currentColor;
+}
+
+@media (any-hover: hover) {
+	.header__burger-button:hover {
+		color: var(--accent-color);
+	}
+}
+
+.header__actions-button {
+	width: 36px;
+	height: 36px;
+	color: var(--main-color);
+	transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+	.header__actions-button:hover {
+		color: var(--accent-color);
+	}
+}
+
+.header__actions-button:active {
+	color: var(--accent-color);
+}
+
+.header__actions-icon {
+	stroke: currentColor;
+}
